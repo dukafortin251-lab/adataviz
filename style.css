@@ -1,0 +1,184 @@
+/* 1. RESET & BASE SETUP */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 2. HEADER & NAVIGATION */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  width: 40%;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.search-bar:focus {
+  border-color: #212529;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #212529;
+}
+
+/* BOUTONS NAVIGATION */
+.btn-black {
+  background-color: #212529;
+  color: #ffffff !important;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* 3. HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #e9ecef;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+/* 4. CATEGORIES & GRILLE DE CARTES */
+.section-category {
+  margin: 50px 0;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  border-left: 4px solid #212529;
+  padding-left: 10px;
+}
+
+/* L'élément <article> qui remplace la div .grid-cards */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* 5. STRUCTURE DES CARTES (<figure>) */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Gestion essentielle de l'image de l'API */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Recadre l'image sans l'écraser */
+  background-color: #e9ecef; /* Fond gris pendant le chargement */
+}
+
+/* Contenu textuel de la carte (<figcaption>) */
+.card figcaption {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Coupe le titre avec "..." s'il est trop long */
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limite la description de l'API à 3 lignes maximum */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 6. FOOTERS SECTIONS & BOUTONS "VOIR PLUS" */
+.section-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-gray {
+  background-color: #e9ecef;
+  color: #495057;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: background-color 0.2s;
+}
+
+.btn-gray:hover {
+  background-color: #dee2e6;
+}
+
+/* 7. MAIN FOOTER */
+.main-footer {
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 50px;
+  border-top: 1px solid #e9ecef;
+  color: #6c757d;
+  font-size: 0.9rem;
+}

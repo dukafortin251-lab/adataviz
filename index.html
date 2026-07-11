@@ -1,13 +1,45 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>adataviz</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Que faire à Paris ?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="page-container">
+    
+    <header class="main-header">
+      <nav class="logo">QueFaire?</nav>
+      <input type="search" class="search-bar" placeholder="search something to do">
+      <nav class="nav-links">
+        <a href="#">Accueil</a>
+        <a href="#">Contact</a>
+        <a href="#" class="btn-black">Button</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Que faire à paris ?</h1>
+    </section>
+
+    <section class="section-category">
+      <h2 class="category-title">Culture</h2>
+      <article class="grid-cards" id="container-culture"></article>
+      <footer class="section-footer">
+        <button class="btn-gray">voir plus</button>
+      </footer>
+    </section>
+
+    
+
+    <footer class="main-footer">
+      QueFaire? duka.dmk
+    </footer>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
