@@ -28,9 +28,11 @@ const printData = async () => {
    article.innerHTML = `
   <figure>
     <img src="${image}" alt="${titre}">
-    <figcaption>${titre}</figcaption>
+    <figcaption>
+      <h3>${titre}</h3>
+      <p>${description}</p>
+    </figcaption>
   </figure>
-  <p>${description}</p>
 `;
     
     containerCulture.appendChild(article);
