@@ -38,5 +38,4 @@ const printData = async () => {
     containerCulture.appendChild(article);
   }
 };
-
 printData();
