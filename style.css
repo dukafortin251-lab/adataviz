@@ -1,4 +1,4 @@
-/* 1. RESET & BASE SETUP */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   padding: 0 20px;
 }
 
-/* 2. HEADER & NAVIGATION */
+
 .main-header {
   display: flex;
   justify-content: space-between;
